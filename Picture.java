@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square suelo;
+    private Circle atardecer;
     /**
      * Constructor for objects of class Picture
      */
@@ -64,7 +65,16 @@ public class Picture
         sun.makeVisible();
         sun.slowMoveVertical(-50);
     }
-
+    
+    /**
+     * Atardecer this picture.
+     */
+    public void atardecer()
+    { 
+        atardecer = new Circle();
+        sun.slowMoveVertical(120);
+    }
+    
     /**
      * Change this picture to black/white display
      */
