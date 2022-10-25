@@ -17,6 +17,7 @@ public class Picture
     private Circle sun;
     private Square suelo;
     private Circle atardecer;
+    private Person persona;
     /**
      * Constructor for objects of class Picture
      */
@@ -73,6 +74,13 @@ public class Picture
     { 
         atardecer = new Circle();
         sun.slowMoveVertical(120);
+        
+        persona = new Person();
+        persona.changeColor("black");
+        persona.moveHorizontal(-230);
+        persona.moveVertical(0);
+        persona.makeVisible();
+        persona.slowMoveHorizontal(100);
     }
     
     /**
